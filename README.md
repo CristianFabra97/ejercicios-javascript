@@ -20,7 +20,7 @@ Escribir una función llamada `contrasenaValida` que reciba un string y retorne 
 console.log(contrasenaValida("2Fj(jjbFsuj")) // true
 console.log(contrasenaValida("eoZiugBf&g9")) // true
 console.log(contrasenaValida("hola")) // false
-console.log(contrasenaValuda("")) // false
+console.log(contrasenaValiida("")) // false
 ```
 
 ## 2. Calcular impuestos
@@ -68,7 +68,7 @@ Escribir una función llamada `bmi` que reciba dos argumentos: peso y altura, y 
 
 // código de prueba
 console.log(bmi(65, 1.8)) // "Normal"
-console.log(bmi(72, 1.6)) // "Sobrepeso"
+console.log(bmi(76, 1.6)) // "Sobrepeso"
 console.log(bmi(52, 1.75)) //  "Bajo de peso"
 console.log(bmi(135, 1.7)) // "Obeso"
 ```
