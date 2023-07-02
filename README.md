@@ -71,15 +71,17 @@ function bmi(peso, altura){
   if(imc < 18.5){
     return "Bajo de peso"
   }
-  if(imc >= 18.5 && imc <= 24.9){
+ else if(imc >= 18.5 && imc <= 24.9){
     return "Normal"
   }
-  if(imc >= 25 && imc <= 29.9){
+ else if(imc >= 25 && imc <= 29.9){
     return "Sobrepeso"
   }
-  if(imc >= 30){
+ else if(imc >= 30){
     return "Obeso"
   }
+  return imc
+}
 
 // código de prueba
 console.log(bmi(65, 1.8)) // "Normal"
