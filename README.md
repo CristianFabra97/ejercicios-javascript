@@ -64,7 +64,22 @@ Escribir una función llamada `bmi` que reciba dos argumentos: peso y altura, y 
 * "Obeso" si es igual o mayor a 30
 
 ```javascript
-// escribe la función bmi acá
+function bmi(peso, altura){
+  
+  let imc = (peso / (altura^2))
+  
+  if(imc < 18.5){
+    return "Bajo de peso"
+  }
+  if(imc >= 18.5 && imc <= 24.9){
+    return "Normal"
+  }
+  if(imc >= 25 && imc <= 29.9){
+    return "Sobrepeso"
+  }
+  if(imc >= 30){
+    return "Obeso"
+  }
 
 // código de prueba
 console.log(bmi(65, 1.8)) // "Normal"
