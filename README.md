@@ -94,8 +94,13 @@ console.log(bmi(135, 1.7)) // "Obeso"
 
 Escribir una función llamada `imprimirArreglo` que reciba un arreglo e imprima cada elemento en una línea a parte:
 
-```javascript
-// escribe tu respuesta acá
+function imprimirArreglo(arr){
+ for (let i = 0; i < arr.length; i ++){
+   console.log(arr[i]);
+ }
+ 
+  
+}
 
 // código de prueba
 console.log(imprimirArreglo(1, "Hola", 2, "Mundo"))
