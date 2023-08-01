@@ -122,7 +122,24 @@ Por ejemplo:
 Si el número es menor a 1000 se debe devolver el mismo número como un string.
 
 ```javascript
-// escribe tu respuesta acá
+
+function likes(num){
+  
+  if(num < 1000){
+  
+    return num.toString();
+  }
+  else if(num < 1000000){
+    let mil = (num / 1000).toFixed(0);
+    return mil + "K";
+  }
+  else{
+    let millon = (num / 1000000).toFixed(0)
+    return millon + "M";
+    
+  }
+  
+}
 
 // código de prueba
 console.log(likes(983)) // "983"
