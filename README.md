@@ -189,7 +189,13 @@ Escribir una función llamada `contarRango` que reciba dos números y retorne cu
 **Nota:** Utiliza un ciclo en tu solución. Puedes asumir que el primer número va a ser menor que el segundo.
 
 ```javascript
-// escribe tu respuesta acá
+function contarRango(num1, num2){
+  let conteo = 0;
+  for(i = num1 + 1; i < num2; i++){
+    conteo++;
+  }
+  return conteo;
+}
 
 // código de prueba
 console.log(contarRango(1, 9)) // 7
