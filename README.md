@@ -275,7 +275,16 @@ console.log(numeroDeCaracteres("eeee", e)) // 4
 Escribir una función llamada `sumarArreglo` que reciba un arreglo de números y retorne la suma de todos los elementos.
 
 ```javascript
-// escribe tu respuesta acá
+function sumarArreglo(arr){
+ 
+  let suma = 0;
+  for(let i = 0; i < arr.length; i++){
+    { suma += arr[i];
+    }
+  }
+  
+  return suma;
+}
 
 // código de prueba
 console.log(sumarArreglo([3, 1, 2])) // 6
@@ -288,7 +297,16 @@ console.log(sumarArreglo([])) // 0
 Escribir una función llamada `multiplicarArreglo` que reciba un arreglo de números y retorne la multiplicación de todos los elementos.
 
 ```javascript
-// escribe tu respuesta acá
+function multiplicarArreglo(arr){
+ 
+  let multi = 1;
+  for(let i = 0; i < arr.length; i++){
+    { multi *= arr[i];
+    }
+  }
+  
+  return multi;
+}
 
 // código de prueba
 console.log(multiplicarArreglo([4, 1, 2, 3])) // 24
