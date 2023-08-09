@@ -229,7 +229,17 @@ console.log(sumarRango(5, 5)) // 0
 Escribir una función llamada `numeroDeAes` que reciba un string y retorne el número de veces que aparece la letra "a":
 
 ```javascript
-// escribe tu respuesta acá
+function numeroDeAes(str){
+  str = str.toLowerCase();
+  let suma = 0;
+  for(let i = 0; i < str.length; i++){
+    if(str[i] === "a"){
+      suma++;
+    }
+  }
+  
+  return suma;
+}
 
 // código de prueba
 console.log(numeroDeAes("abracadabra")) // 5
