@@ -252,7 +252,17 @@ console.log(numeroDeAes("")) // 0
 Escribir una función llamada `numeroDeCaracteres` que reciba un string y un caracter (un string de un caracter). La función debe retornar el número de veces que aparece el caracter en el string.
 
 ```javascript
-// escribe tu respuesta acá
+function numeroDeCaracteres(str, char){
+  str = str.toLowerCase();
+  let suma = 0;
+  for(let i = 0; i < str.length; i++){
+    if(str[i] === char){
+      suma++;
+    }
+  }
+  
+  return suma;
+}
 
 // código de prueba
 console.log(numeroDeCaracteres("Hola Mundo", "o")) // 2
