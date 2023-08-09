@@ -210,7 +210,13 @@ Escribir una función llamada `sumarRango` que reciba dos argumentos: número in
 **Nota:** puedes asumir que el número inicial va a ser menor o igual que el número final.
 
 ```javascript
-// escribe tu respuesta acá
+function sumarRango(numI, numF){
+  let suma = 0;
+  for(let i = numI; i <= numF; i++){
+    suma += i;
+  }
+  return suma;
+}
 
 // código de prueba
 console.log(sumarRango(0, 10)) // 55
